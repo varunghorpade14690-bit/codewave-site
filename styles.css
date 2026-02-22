@@ -124,7 +124,7 @@ body {
 }
 
 .hero h1 {
-  font-size: clamp(2.4rem, 7vw, 7.2rem);
+  font-size: clamp(2.1rem, 6.2vw, 6.2rem);
   line-height: 0.95;
   letter-spacing: -0.03em;
   color: var(--brand-lime);
@@ -241,6 +241,14 @@ section h2 {
   color: var(--text-muted);
 }
 
+.mission.section-page {
+  padding-top: 30px;
+}
+
+.vision-title {
+  margin-top: 28px;
+}
+
 .services .cards,
 .cases .cards,
 .vision .cards,
@@ -275,6 +283,73 @@ section h2 {
 
 .card p {
   color: var(--text-muted);
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.about-copy p + p {
+  margin-top: 14px;
+}
+
+.about-points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.point-card {
+  background: #ffffff;
+  border: 1px solid #d8ecec;
+  border-left: 4px solid var(--brand-teal);
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 0 6px 16px rgba(10, 38, 64, 0.07);
+}
+
+.point-card h3 {
+  color: var(--brand-navy);
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.point-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.about-visual {
+  display: grid;
+  gap: 14px;
+}
+
+.metric-card {
+  background: linear-gradient(150deg, #123559, #1c5f70);
+  border: 1px solid rgba(184, 240, 241, 0.26);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 10px 22px rgba(10, 38, 64, 0.2);
+}
+
+.metric-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--brand-lime);
+  margin-bottom: 8px;
+}
+
+.metric-label {
+  display: block;
+  font-size: 0.92rem;
+  color: #d9f5f6;
 }
 
 /* ===== FORM ===== */
@@ -366,6 +441,14 @@ section h2 {
   .vision .card,
   .vision-cards .card {
     flex: 1 1 100%;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-points {
+    grid-template-columns: 1fr;
   }
 
   .btn {
