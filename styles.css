@@ -135,9 +135,14 @@ section h2 {
   background: var(--surface-soft);
 }
 
+.mission,
 .about,
 .contact {
   background: var(--surface);
+}
+
+.vision {
+  background: var(--surface-soft);
 }
 
 .about p,
@@ -145,11 +150,28 @@ section h2 {
   color: var(--text-muted);
 }
 
+.mission-statement {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--brand-navy);
+  margin-bottom: 12px;
+}
+
+.mission-detail {
+  max-width: 900px;
+  color: var(--text-muted);
+}
+
 .services .cards,
-.cases .cards {
+.cases .cards,
+.vision .cards {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+}
+
+.vision .card {
+  flex: 1 1 30%;
 }
 
 .card {
@@ -225,5 +247,9 @@ section h2 {
 
   .hero {
     padding: 42px 0;
+  }
+
+  .vision .card {
+    flex: 1 1 100%;
   }
 }
