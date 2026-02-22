@@ -154,6 +154,17 @@ body {
   font-weight: 600;
 }
 
+.page-hero {
+  background: linear-gradient(105deg, var(--brand-navy), #1f6c73);
+  color: #fff;
+  padding: 46px 0;
+}
+
+.page-hero h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
 .btn {
   background: linear-gradient(135deg, var(--brand-teal), #31b8ba);
   color: #fff;
@@ -266,6 +277,10 @@ section h2 {
   outline: none;
   border-color: var(--brand-teal);
   box-shadow: 0 0 0 3px rgba(38, 139, 141, 0.18);
+}
+
+.section-page {
+  min-height: 58vh;
 }
 
 /* ===== FOOTER ===== */
