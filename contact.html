@@ -28,20 +28,64 @@
   </header>
 
   <section class="contact section-page">
-    <div class="container">
-      <form action="https://formspree.io/f/YOUR_FORM_ENDPOINT" method="POST">
+    <div class="container grid-two">
+      <form class="panel" action="https://formspree.io/f/YOUR_FORM_ENDPOINT" method="POST">
+        <h3>Send Us A Message</h3>
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Message" rows="5" required></textarea>
         <button type="submit" class="btn">Send Message</button>
       </form>
-      <p>Email: info@CodeWave.com</p>
-      <p>Phone: +123-456-7890</p>
+      <div class="panel">
+        <h3>Business Contact</h3>
+        <p>Email: contact@codewave.com</p>
+        <p>Phone: +353 833864071</p>
+        <p>Address: Unit 1, Boieng Avenue, Waterford Airport Business Park, Waterford, Ireland, X91 NTDA</p>
+        <iframe
+          class="map-embed"
+          src="https://www.google.com/maps?q=Unit%201%2C%20Boieng%20Avenue%2C%20Waterford%20Airport%20Business%20Park%2C%20Waterford%2C%20Ireland%2C%20X91%20NTDA&output=embed"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          title="CodeWave Waterford Office Location">
+        </iframe>
+        <p>Office Hours: Mon-Fri, 9:00 AM to 6:00 PM</p>
+      </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2026 CodeWave Ltd. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">
+          <img src="assets/logo.png" alt="CodeWave logo" class="footer-logo" />
+          <span>CodeWave Ltd</span>
+        </a>
+        <p class="footer-text">Practical IT consultancy for cloud, data, and digital transformation.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="mission.html">Our Mission</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-contact">
+          <li>Email: contact@codewave.com</li>
+          <li>Phone: +353 833864071</li>
+          <li>Unit 1, Boieng Avenue, Waterford Airport Business Park, Waterford, Ireland, X91 NTDA</li>
+          <li>Mon-Fri: 9:00 AM - 6:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 CodeWave Ltd. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
