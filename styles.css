@@ -111,6 +111,7 @@ body {
   align-items: center;
   padding: 22px 0;
   overflow: hidden;
+  position: relative;
 }
 
 .hero .container {
@@ -121,6 +122,8 @@ body {
   max-width: 1360px;
   width: 100%;
   padding: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
@@ -204,6 +207,23 @@ body {
     );
   mix-blend-mode: screen;
   opacity: 0.72;
+}
+
+.hero-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.38;
+  pointer-events: none;
+}
+
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(12, 26, 54, 0.78), rgba(10, 60, 78, 0.52));
+  z-index: 1;
 }
 
 .hero-visuals {
@@ -310,6 +330,7 @@ section h2 {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(10, 38, 64, 0.08);
+  overflow: hidden;
 }
 
 .card h3 {
@@ -323,7 +344,7 @@ section h2 {
 
 .service-image {
   width: 100%;
-  height: 170px;
+  height: 122px;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid #d8ecec;
@@ -608,6 +629,10 @@ section h2 {
     grid-template-columns: 1fr;
   }
 
+  .service-image {
+    height: 96px;
+  }
+
   .vision .card,
   .vision-cards .card {
     flex: 1 1 100%;
@@ -646,5 +671,11 @@ section h2 {
   .footer-grid > div:nth-child(2) {
     border-right: none;
     border-bottom: 1px solid rgba(232, 246, 247, 0.28);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg-video {
+    display: none;
   }
 }
