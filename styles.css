@@ -678,8 +678,6 @@ section h2 {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .hero-bg-video {
-    display: none;
-  }
+.video-paused .hero-bg-video {
+  display: none;
 }

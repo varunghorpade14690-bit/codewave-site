@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CodeWave Ltd | IT Consultancy</title>
-  <link rel="stylesheet" href="styles.css?v=20260301b" />
+  <link rel="stylesheet" href="styles.css?v=20260301c" />
 </head>
 <body>
   <nav class="navbar">
@@ -29,8 +29,9 @@
       loop
       playsinline
       preload="auto"
+      id="hero-video"
       poster="https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=1400">
-      <source src="https://cdn.coverr.co/videos/coverr-aerial-view-of-beach-1579/1080p.mp4" type="video/mp4" />
+      <source src="assets/hero-wave.mp4" type="video/mp4" />
     </video>
     <div class="hero-video-overlay" aria-hidden="true"></div>
     <div class="container">
@@ -79,5 +80,14 @@
       <p>&copy; 2026 CodeWave Ltd. All rights reserved.</p>
     </div>
   </footer>
+  <script>
+    (function () {
+      var v = document.getElementById("hero-video");
+      if (!v) return;
+      v.play().catch(function () {
+        document.body.classList.add("video-paused");
+      });
+    })();
+  </script>
 </body>
 </html>
