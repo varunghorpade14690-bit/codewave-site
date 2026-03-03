@@ -517,12 +517,25 @@ section h2 {
 }
 
 .job-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
   background: #fff;
   border: 1px solid #d8ecec;
   border-left: 4px solid var(--brand-teal);
   border-radius: 10px;
   padding: 18px;
   box-shadow: 0 8px 20px rgba(10, 38, 64, 0.08);
+}
+
+.job-main {
+  flex: 1;
+}
+
+.job-action {
+  flex: 0 0 auto;
+  padding-top: 6px;
 }
 
 .job-card h3 {
@@ -538,10 +551,41 @@ section h2 {
 }
 
 .job-btn {
-  margin-top: 12px;
+  margin-top: 0;
   font-size: 1rem;
-  padding: 10px 22px;
+  padding: 10px 18px;
   text-decoration: none;
+}
+
+.job-detail-panel {
+  margin-top: 18px;
+  background: #ffffff;
+  border: 1px solid #d8ecec;
+  border-left: 4px solid var(--brand-teal-dark);
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(10, 38, 64, 0.07);
+}
+
+.job-detail-panel h3 {
+  color: var(--brand-navy);
+  margin-bottom: 8px;
+}
+
+.job-detail-panel p {
+  color: var(--text-muted);
+}
+
+.job-detail-panel ul {
+  margin: 10px 0 12px 20px;
+  display: grid;
+  gap: 8px;
+  color: var(--text-muted);
+}
+
+.detail-apply {
+  display: inline-block;
+  margin-top: 8px;
 }
 
 .process-list {
@@ -566,6 +610,13 @@ section h2 {
 .career-cta p {
   color: #dff2f3;
   max-width: 800px;
+}
+
+.career-cta-btn {
+  margin-top: 24px;
+  font-size: 1rem;
+  padding: 10px 26px;
+  text-decoration: none;
 }
 
 /* ===== FOOTER ===== */
@@ -716,6 +767,20 @@ section h2 {
 
   .service-image {
     height: 96px;
+  }
+
+  .job-card {
+    flex-direction: column;
+  }
+
+  .job-action {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .job-action .job-btn {
+    width: 100%;
+    text-align: center;
   }
 
   .career-grid {
