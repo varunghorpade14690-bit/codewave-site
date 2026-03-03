@@ -683,6 +683,7 @@ section h2 {
 }
 
 .career-cta-btn {
+  display: inline-block;
   margin-top: 24px;
   font-size: 1rem;
   padding: 10px 26px;
