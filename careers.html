@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Careers | CodeWave Ltd</title>
-  <link rel="stylesheet" href="styles.css?v=20260303" />
+  <link rel="stylesheet" href="styles.css?v=20260304" />
 </head>
 <body>
   <nav class="navbar">
@@ -82,61 +82,15 @@
       <div class="job-list">
         <article class="job-card">
           <div class="job-main">
-            <h3>Cloud Engineer</h3>
-            <p class="job-meta">Full-time | Hybrid | EU Time Zone</p>
-            <p>Design and optimize secure cloud infrastructure, deployment pipelines, and reliability patterns.</p>
-          </div>
-          <div class="job-action">
-            <a class="btn job-btn" href="mailto:contact@codewaveitsolutions.com?subject=Application%20-%20Cloud%20Engineer">Apply Now</a>
-          </div>
-        </article>
-        <article class="job-card">
-          <div class="job-main">
-            <h3>Data Analyst</h3>
-            <p class="job-meta">Full-time | Hybrid | EU Time Zone</p>
-            <p>Build reporting models, automate KPI dashboards, and support business performance analysis.</p>
-          </div>
-          <div class="job-action">
-            <a class="btn job-btn" href="mailto:contact@codewaveitsolutions.com?subject=Application%20-%20Data%20Analyst">Apply Now</a>
-          </div>
-        </article>
-        <article class="job-card">
-          <div class="job-main">
             <h3>Data Governance Consultant</h3>
-            <p class="job-meta">Full-time | Hybrid | EU Time Zone</p>
-            <p>Define governance frameworks, data quality controls, ownership models, and compliance-aligned standards.</p>
+            <p class="job-meta">Full-time | Remote</p>
+            <p>Lead enterprise data governance programs covering policy, ownership, data quality, metadata, and regulatory alignment.</p>
           </div>
           <div class="job-action">
-            <a class="btn job-btn" id="open-data-governance" href="#data-governance-description">Apply Now</a>
-          </div>
-        </article>
-        <article class="job-card">
-          <div class="job-main">
-            <h3>Software Engineer</h3>
-            <p class="job-meta">Full-time | Hybrid | EU Time Zone</p>
-            <p>Deliver client-facing applications with modern engineering practices and maintainable architecture.</p>
-          </div>
-          <div class="job-action">
-            <a class="btn job-btn" href="mailto:contact@codewaveitsolutions.com?subject=Application%20-%20Software%20Engineer">Apply Now</a>
+            <a class="btn job-btn" href="data-governance-consultant.html">View & Apply</a>
           </div>
         </article>
       </div>
-      <article id="data-governance-description" class="job-detail-panel" hidden>
-        <h3>Data Governance Consultant - Job Description</h3>
-        <p>
-          You will lead governance design for client data platforms by defining policies,
-          stewardship models, quality standards, and operating routines that improve trust in data.
-        </p>
-        <ul>
-          <li>Design governance frameworks, data ownership models, and access policies</li>
-          <li>Define data quality rules, lineage expectations, and issue resolution workflows</li>
-          <li>Align governance with regulatory and internal compliance requirements</li>
-          <li>Work with engineering and business teams to implement controls in delivery pipelines</li>
-          <li>Create governance scorecards and reporting for leadership reviews</li>
-        </ul>
-        <p><strong>Preferred Experience:</strong> Data governance strategy, metadata management, compliance, and stakeholder facilitation.</p>
-        <a class="btn job-btn detail-apply" href="mailto:contact@codewaveitsolutions.com?subject=Application%20-%20Data%20Governance%20Consultant">Apply For This Role</a>
-      </article>
     </div>
   </section>
 
@@ -156,7 +110,7 @@
 
   <section class="career-cta">
     <div class="container">
-      <h2>Don’t See Your Role Yet?</h2>
+      <h2>Don't See Your Role Yet?</h2>
       <p>Send your profile and preferred role to our hiring team. We review all relevant applications.</p>
       <a class="btn career-cta-btn" href="mailto:contact@codewaveitsolutions.com?subject=Career%20Enquiry%20-%20CodeWave">Send Your CV</a>
     </div>
@@ -196,17 +150,5 @@
       <p>&copy; 2026 CodeWave Ltd. All rights reserved.</p>
     </div>
   </footer>
-  <script>
-    (function () {
-      var trigger = document.getElementById("open-data-governance");
-      var panel = document.getElementById("data-governance-description");
-      if (!trigger || !panel) return;
-      trigger.addEventListener("click", function (event) {
-        event.preventDefault();
-        panel.hidden = false;
-        panel.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    })();
-  </script>
 </body>
 </html>
