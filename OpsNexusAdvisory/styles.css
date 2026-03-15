@@ -221,62 +221,6 @@ textarea {
   text-align: center;
 }
 
-.site-footer {
-  margin-top: 32px;
-  background: linear-gradient(90deg, var(--ink), var(--brand));
-  color: #fff;
-  padding: 36px 0 0;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.footer-brand {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-.footer-text {
-  color: #dbe9f7;
-  max-width: 320px;
-}
-
-.footer-links,
-.footer-contact {
-  list-style: none;
-  display: grid;
-  gap: 8px;
-  margin-top: 12px;
-}
-
-.footer-links a {
-  color: #dbe9f7;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.footer-contact {
-  color: #dbe9f7;
-}
-
-.footer-bottom {
-  margin-top: 24px;
-  padding: 16px 0 24px;
-  border-top: 1px solid rgba(219, 233, 247, 0.2);
-  text-align: center;
-  color: #dbe9f7;
-}
-
 @media (max-width: 900px) {
   .nav .container {
     flex-direction: column;
@@ -285,8 +229,7 @@ textarea {
 
   .grid-3,
   .split,
-  .form-grid,
-  .footer-grid {
+  .form-grid {
     grid-template-columns: 1fr;
   }
 
